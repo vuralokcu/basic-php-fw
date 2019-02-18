@@ -1,0 +1,1 @@
+<h1>Merhaba: <?php echo $user_name; ?></h1>

@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    # Prevent Directoy listing
+    Options -Indexes
+
+    RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?slug=$1
+
+</IfModule>
